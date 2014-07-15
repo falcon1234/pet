@@ -1,0 +1,15 @@
+@(message: String) @main("WebSocket listener") {
+
+
+<section>
+	<h1>WebSocket listener</h1>
+	<p>
+		Last message received from <b>Dummy Input</b> REST-endpoint.
+	</p>
+	<pre id="ping"><i>No message received yet.</i></pre>
+
+</section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="@routes.Application.wsJs()"></script>
+
+}
